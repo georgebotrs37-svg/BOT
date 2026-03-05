@@ -41,7 +41,7 @@ templates
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/python-chatbot.git
+git clone https:/georgebotrs37-svg/github.com//python-chatbot.git
 
 2. Go to the project folder
 

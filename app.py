@@ -5,7 +5,7 @@ app = Flask(__name__)
 def bot_response(message):
     message = message.lower()
     if message == "hello":
-        return "Hello 👋"
+        return "Hello "
     elif message == "who are you":
         return "I am a Python website bot"
     elif message == "cyber security":

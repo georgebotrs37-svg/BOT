@@ -41,7 +41,7 @@ templates
 
 1. Clone the repository
 
-git clone https://github.com/georgebotrs37-svg/python-chatbot.git
+git clone https://github.com/yourusername/python-chatbot.git
 
 2. Go to the project folder
 
@@ -62,3 +62,30 @@ python app.py
 Then open your browser and go to:
 
 http://127.0.0.1:5000
+
+---
+
+💬 Example Commands
+
+You can try messages like:
+
+- hello
+- who are you
+- cyber security
+
+---
+
+📸 Screenshot
+
+(Add your project screenshot here)
+
+👨‍💻 Author
+
+MR.X
+Cybersecurity Enthusiast | Python Developer
+
+---
+
+⭐ Support
+
+If you like this project, consider giving it a star on GitHub ⭐

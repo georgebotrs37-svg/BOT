@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python ChatBot</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+
+body{
+background:#0f172a;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+#chatbox{
+width:350px;
+background:#1e293b;
+border-radius:10px;
+padding:15px;
+color:white;
+}
+
+#messages{
+height:300px;
+overflow-y:auto;
+margin-bottom:10px;
+}
+
+.user{
+color:#a238f8;
+}
+
+.bot{
+color:#447fff;
+}
+
+input{
+width:70%;
+padding:8px;
+border:none;
+border-radius:5px;
+}
+
+button{
+padding:8px;
+background:#3b82f6;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2563eb;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="chatbox">
+
+<h3>Cyber Bot</h3>
+
+<div id="messages"></div>
+
+<input id="text" placeholder="Type message">
+<button onclick="send()">Send</button>
+
+</div>
+
+<script>
+
+function send(){
+
+let msg = $("#text").val()
+
+$("#messages").append("<p class='user'>You: "+msg+"</p>")
+
+$.post("/get",{msg:msg},function(data){
+
+$("#messages").append("<p class='bot'>Bot: "+data.response+"</p>")
+
+})
+
+$("#text").val("")
+
+}
+
+</script>
+
+</body>
+</html>
